@@ -1,0 +1,52 @@
+Source: node-glob-stream
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , mocha <!nocheck>
+ , node-expect.js <!nocheck>
+ , node-extend <!nocheck>
+ , node-glob <!nocheck>
+ , node-glob-parent <!nocheck>
+ , node-is-negated-glob <!nocheck>
+ , node-mississippi <!nocheck>
+ , node-ordered-read-streams <!nocheck>
+ , node-pumpify <!nocheck>
+ , node-readable-stream <!nocheck>
+ , node-remove-trailing-separator <!nocheck>
+ , node-should <!nocheck>
+ , node-to-absolute-glob <!nocheck>
+ , node-unique-stream <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-glob-stream
+Vcs-Git: https://salsa.debian.org/js-team/node-glob-stream.git
+Homepage: https://gulpjs.com
+Rules-Requires-Root: no
+
+Package: node-glob-stream
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-extend
+ , node-glob
+ , node-glob-parent
+ , node-is-negated-glob
+ , node-ordered-read-streams
+ , node-pumpify
+ , node-readable-stream
+ , node-remove-trailing-separator
+ , node-to-absolute-glob
+ , node-unique-stream
+ , nodejs
+Breaks: node-help-me (<< 1.1)
+Provides: ${nodejs:Provides}
+Description: wrapper around node-glob to make it streamy
+ You can pass any combination of globs. One caveat is that you can not only
+ pass a glob negation, you must give it at least one positive glob so it knows
+ where to start. All given must match for the file to be returned.
+ .
+ Node.js is an event-based server-side JavaScript engine.

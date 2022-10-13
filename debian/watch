@@ -1,0 +1,10 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-glob-stream-$1/ \
+ https://github.com/gulpjs/glob-stream/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-glob-stream,ctype=nodejs,pgpmode=none" \
+ https://registry.npmjs.org/@types/glob-stream https://registry.npmjs.org/@types/glob-stream/-/glob-stream-([\d\.]+)@ARCHIVE_EXT@ group

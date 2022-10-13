@@ -1,0 +1,80 @@
+node-glob-stream (6.1.0+~6.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Drop unneeded dependencies version constraints
+
+ -- Yadd <yadd@debian.org>  Thu, 04 Nov 2021 12:01:30 +0100
+
+node-glob-stream (6.1.0+~6.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * Embed typescript definitions and repack
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 08 Jan 2021 09:31:16 +0100
+
+node-glob-stream (6.1.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.0
+  * Remove remove-readable-stream.patch and add node-readable-stream
+    dependency
+  * Ignore one error test that fails with recent mocha (Closes: #952186)
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 24 Feb 2020 06:14:43 +0100
+
+node-glob-stream (6.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 12
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Add "Rules-Requires-Root: no"
+  * Use pkg-js-tools auto test & install
+  * Update patch descriptions
+  * Drop unneeded version constraints from (build) dependencies
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Use secure URI in Homepage field.
+  * Set debhelper-compat version in Build-Depends.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.4.1, no changes needed.
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 21 Dec 2019 09:49:11 +0100
+
+node-glob-stream (6.1.0-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Pirate Praveen ]
+  * New upstream version 6.1.0
+  * Use salsa.debian.org in Vcs-* fields
+  * Bump debhelper compatibility level to 11
+  * Bump Standards-Version to 4.2.1 (no changes needed)
+  * Update dependencies
+  * Change section to javascript
+  * Remove readable-stream and use expect.js instead of expect
+  * Enable nocheck build profile
+  * Install readable.js
+
+  [ juggernaut451 ]
+  * Convert more test cases to use expect.js
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 30 Oct 2018 13:19:51 +0530
+
+node-glob-stream (5.3.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #847679)
+
+ -- Sruthi Chandran <srud@disroot.org>  Sat, 10 Dec 2016 21:15:25 +0530
