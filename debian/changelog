@@ -1,3 +1,20 @@
+node-glob-stream (7.0.0+~6.1.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * Add fix for expect (jest) >= 29 (Closes: #1011818)
+
+ -- Yadd <yadd@debian.org>  Fri, 27 May 2022 23:15:05 +0200
+
+node-glob-stream (7.0.0+~6.1.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Drop dependency to nodejs
+  * New upstream version 7.0.0+~6.1.1
+  * Fix test: drop patch and use expect (from jest) instead of expect.js
+
+ -- Yadd <yadd@debian.org>  Wed, 04 May 2022 12:09:52 +0200
+
 node-glob-stream (6.1.0+~6.1.0-2) unstable; urgency=medium
 
   * Team upload
