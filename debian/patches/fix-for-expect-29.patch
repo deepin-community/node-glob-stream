@@ -1,0 +1,26 @@
+Description: fix for expect (jest) 28
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1011818
+Forwarded: no
+Last-Update: 2022-05-27
+
+--- a/test/index.js
++++ b/test/index.js
+@@ -1,6 +1,6 @@
+ 'use strict';
+ 
+-var expect = require('expect');
++var {expect} = require('expect');
+ var miss = require('mississippi');
+ 
+ var globStream = require('../');
+--- a/test/readable.js
++++ b/test/readable.js
+@@ -1,6 +1,6 @@
+ 'use strict';
+ 
+-var expect = require('expect');
++var {expect} = require('expect');
+ var sinon = require('sinon');
+ var miss = require('mississippi');
+ 
